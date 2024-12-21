@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+      body {
+        font-family: 'Montserrat', sans-serif;
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(120deg, #1a1a3d, #2f3c72);
+        color: #f5f5f5;
+        overflow-x: hidden;
+        scroll-behavior: smooth;
+      }
+
+      header {
+        background: rgba(20, 20, 20, 0.95);
+        color: #fff;
+        padding: 1.5rem 1rem;
+        text-align: center;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+      }
+
+      header h1 {
+        font-size: 2.5rem;
+        font-weight: 600;
+        margin: 0;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        animation: slideIn 1.5s ease-out;
+      }
+
+      nav ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 1rem;
+      }
+
+      nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 1.1rem;
+        padding: 0.5rem 1rem;
+        transition: all 0.3s ease;
+        border-bottom: 2px solid transparent;
+      }
+
+      nav ul li a:hover, nav ul li a.active {
+        color: #ff6f61;
+        border-bottom: 2px solid #ff6f61;
+      }
+
+      main {
+        padding: 4rem 2rem;
+        max-width: 1200px;
+        margin: auto;
+      }
+
+      section {
+        margin-bottom: 3rem;
+        padding: 2rem;
+        background: rgba(40, 40, 40, 0.95);
+        border-radius: 8px;
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      section:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 12px 25px rgba(0, 0, 0, 0.6);
+      }
+
+      section h2 {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+        color: #ff6f61;
+        position: relative;
+        text-transform: uppercase;
+      }
+
+      section h2::after {
+        content: '';
+        display: block;
+        width: 60px;
+        height: 4px;
+        background: #ff6f61;
+        margin-top: 0.5rem;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      section ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        line-height: 1.8;
+      }
+
+      section ul li {
+        font-size: 1.1rem;
+        margin-bottom: 1rem;
+        position: relative;
+        padding-left: 30px;
+      }
+
+      section ul li::before {
+        content: '\2022';
+        position: absolute;
+        left: 0;
+        color: #ff6f61;
+        font-size: 1.5rem;
+      }
+
+      footer {
+        background: rgba(10, 10, 10, 0.95);
+        color: white;
+        text-align: center;
+        padding: 2rem 0;
+        font-size: 1rem;
+        letter-spacing: 1px;
+        border-top: 2px solid #ff6f61;
+      }
+
+      footer p {
+        margin: 0;
+      }
+
+      @keyframes slideIn {
+        0% {
+          transform: translateY(-50px);
+          opacity: 0;
+        }
+        100% {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+
+      @media (max-width: 768px) {
+        nav ul {
+          flex-direction: column;
+          gap: 10px;
+        }
+
+        header h1 {
+          font-size: 2rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Skill sets</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="biodata.html">Bio-data</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+
+      <section id="skills">
+        <h2>Technical Skills</h2>
+        <ul>
+          <li><strong>Programming Languages:</strong> Java, C, MySQL, Python</li>
+          <li><strong>Web Technologies:</strong> HTML, CSS, Flask</li>
+          <li><strong>Tools & Technologies:</strong> Git, VS code, Pycharm, AWS, DevOps</li>
+        </ul>
+      </section>
+      <section id="soft-skills">
+        <h2>Soft Skills</h2>
+        <ul>
+          <li>Communication</li>
+          <li>Leadership</li>
+          <li>Time Management</li>
+        </ul>
+      </section>
+      <section id="languages">
+        <h2>Languages Known</h2>
+        <ul>
+          <li>English</li>
+          <li>Kannada</li>
+        </ul>
+      </section>
+      <section id="projects">
+        <h2>Projects</h2>
+        <ul>
+          <li><strong>Interactive Skills Enhancer for Children with ASD</strong><br>
+      Developed an interactive learning tool designed to enhance social skills in children with Autism Spectrum Disorder (ASD) and Intellectual Disabilities (ID). The project focuses on providing immersive, customizable environments that help children develop emotional recognition and social interaction skills in real-time.
+      <br><strong>Tools Used:</strong>
+      <ul>
+        <li>Python</li>
+        <li>Flask (Web Framework)</li>
+        <li>HTML, CSS, JavaScript (Frontend Technologies)</li>
+        <li>Emotion Recognition Technology</li>
+        <li>Web-Based Dashboards for monitoring progress</li>
+        <li>Real-Time Feedback Systems</li>
+      </ul>
+      <br><strong>Key Functionalities:</strong>
+      <ul>
+        <li>Interactive web-based learning environments</li>
+        <li>Emotion recognition to assess the child's emotional responses and provide feedback</li>
+        <li>Customizable learning paths based on individual progress</li>
+        <li>Real-time feedback and guidance for improving social skills</li>
+        <li>Monitoring dashboard for parents and educators to track and analyze progress</li>
+        <li>Adaptive learning systems for personalized difficulty adjustments</li>
+      </ul>
+    </li>
+
+    <li><strong>Currency Converter App</strong><br>
+      Created a Java-based currency converter app with an intuitive interface for converting multiple currencies. Integrated external APIs to fetch real-time exchange rates for accurate conversions, highlighting skills in Java and API integration.
+    </li>
+    <li><strong>Community Issue Reporting System</strong><br>
+      Developed a web-based application using Python, Flask, HTML, CSS, and MySQL for reporting and tracking community issues (e.g., potholes, broken streetlights). Features include:
+      <ul>
+        <li>User authentication</li>
+        <li>Issue management</li>
+        <li>Admin dashboard</li>
+        <li>Image upload functionality</li>
+        <li>Categories button for filtering</li>
+        <li>Notification system for updates</li>
+      </ul>
+      Focused on secure CRUD operations and scalability.
+    </li>
+
+
+        </ul>
+      </section>
+      <section id="certifications">
+        <h2>Certifications</h2>
+        <ul>
+          <li>Completed two courses in Cyber Security offered by Google (Identity India)</li>
+          <li>AWS and DevOps course certification offered by Cloud Institution, Bengaluru</li>
+        </ul>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2024 Apsara B. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
